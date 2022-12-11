@@ -2,7 +2,7 @@
 echo "更新手动添加的规则"
 git pull
 time=$(date "+%Y%m%d-%H%M%S")
-path="${HOME}/clash_config"
+path="${HOME}/auto_update"
 echo "" > ${path}/logs.log
 cd ${path}
 echo "下载规则文件到本地"
