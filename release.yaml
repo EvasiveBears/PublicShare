@@ -1,0 +1,981 @@
+allow-lan: true
+cfw-bypass:
+- localhost
+- 127.*
+- 10.*
+- 172.16.*
+- 172.17.*
+- 172.18.*
+- 172.19.*
+- 172.20.*
+- 172.21.*
+- 172.22.*
+- 172.23.*
+- 172.24.*
+- 172.25.*
+- 172.26.*
+- 172.27.*
+- 172.28.*
+- 172.29.*
+- 172.30.*
+- 172.31.*
+- 192.168.*
+- <local>
+cfw-latency-timeout: 5000
+dns:
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  enable: true
+  enhanced-mode: redir-host
+  fake-ip-range: 198.18.0.1/16
+  fallback:
+  - https://doh.dns.sb/dns-query
+  - https://dns.cloudflare.com/dns-query
+  - https://dns.twnic.tw/dns-query
+  - tls://8.8.4.4:853
+  fallback-filter:
+    geoip: true
+    ipcidr:
+    - 240.0.0.0/4
+    - 0.0.0.0/32
+  ipv6: false
+  nameserver:
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  use-hosts: true
+external-controller: 127.0.0.1:9090
+log-level: info
+mode: Rule
+port: 7890
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 美国|1Gbps
+  network: ws
+  port: 80
+  server: 66.152.188.204
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fd2a0d31-3fc1-5f3a-36af-f7b264e6262e
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 韩国|50Mbps
+  network: ws
+  port: 80
+  server: 144.24.88.197
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fd2a0d31-3fc1-5f3a-36af-f7b264e6262e
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- name: charles
+  port: 8888
+  server: 127.0.0.1
+  type: http
+- name: 12-11 13:11 更新
+  port: 7890
+  server: 127.0.0.1
+  type: http
+- name: 熊|剩余流量：479.27 GB
+  port: 7890
+  server: 127.0.0.1
+  type: http
+- name: 熊|套餐到期：2023-01-09
+  port: 7890
+  server: 127.0.0.1
+  type: http
+- name: 北|剩余流量：498.15 GB
+  port: 7890
+  server: 127.0.0.1
+  type: http
+- name: 北|套餐到期：2023-01-09
+  port: 7890
+  server: 127.0.0.1
+  type: http
+- name: 檬|剩余流量：499.99 GB
+  port: 7890
+  server: 127.0.0.1
+  type: http
+- name: 檬|套餐到期：2023-01-09
+  port: 7890
+  server: 127.0.0.1
+  type: http
+- name: 快1|剩余流量：1279.41 GB
+  port: 7890
+  server: 127.0.0.1
+  type: http
+- name: 快1|套餐到期：2023-01-11
+  port: 7890
+  server: 127.0.0.1
+  type: http
+- name: 快1|只用于游戏加速，禁止用于非法用途，禁止刷流量，谢谢大家配合
+  port: 7890
+  server: 127.0.0.1
+  type: http
+- name: 快2|剩余流量：1278.33 GB
+  port: 7890
+  server: 127.0.0.1
+  type: http
+- name: 快2|套餐到期：2023-01-11
+  port: 7890
+  server: 127.0.0.1
+  type: http
+- name: 快2|只用于游戏加速，禁止用于非法用途，禁止刷流量，谢谢大家配合
+  port: 7890
+  server: 127.0.0.1
+  type: http
+- name: 风|剩余流量：386.65GB
+  port: '7890'
+  server: 127.0.0.1
+  type: http
+- name: 风|过期时间：2022-12-16
+  port: '7890'
+  server: 127.0.0.1
+  type: http
+- alterId: '0'
+  cipher: auto
+  name: 熊|北京市|01
+  network: ws
+  port: '80'
+  server: 52.81.254.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fc9bc265-1aec-46ee-bea2-6ce2ab0ff9e9
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 熊|北京市|02
+  network: ws
+  port: '80'
+  server: 52.81.104.217
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fc9bc265-1aec-46ee-bea2-6ce2ab0ff9e9
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 北|北京市|01
+  network: ws
+  port: '80'
+  server: 52.81.254.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7f86dbf5-8c0b-45a2-9aec-a8b56c646d6c
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 北|北京市|02
+  network: ws
+  port: '80'
+  server: 52.81.104.217
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7f86dbf5-8c0b-45a2-9aec-a8b56c646d6c
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 檬|北京市|01
+  network: ws
+  port: '80'
+  server: 52.81.254.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5161e623-4d24-46b7-aecf-c0c4e2a9b0ef
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 檬|北京市|02
+  network: ws
+  port: '80'
+  server: 52.81.104.217
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5161e623-4d24-46b7-aecf-c0c4e2a9b0ef
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快1|四川省|01
+  network: ws
+  port: '80'
+  server: 112.18.159.114
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: faecfd23-4636-4a3b-a851-ce1e088d9763
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快1|辽宁|02
+  network: ws
+  port: '80'
+  server: 60.18.196.150
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: faecfd23-4636-4a3b-a851-ce1e088d9763
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快2|四川省|01
+  network: ws
+  port: '80'
+  server: 112.18.159.114
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 172f1bab-1f72-4de3-b857-b363422cf1a9
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快2|辽宁|02
+  network: ws
+  port: '80'
+  server: 60.18.196.150
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 172f1bab-1f72-4de3-b857-b363422cf1a9
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '1'
+  cipher: auto
+  name: 风|四川省|01
+  network: ws
+  port: '80'
+  server: 112.18.159.113
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5acbe6b9-404d-3dc8-a3e0-cb60cd546895
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '1'
+  cipher: auto
+  name: 风|广西壮族自治区|02
+  network: ws
+  port: '80'
+  server: 124.226.64.140
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5acbe6b9-404d-3dc8-a3e0-cb60cd546895
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '1'
+  cipher: auto
+  name: 风|江苏省|03
+  network: ws
+  port: '80'
+  server: 222.186.150.71
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5acbe6b9-404d-3dc8-a3e0-cb60cd546895
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快1|香港|Hong_Kong|08
+  network: ws
+  port: '80'
+  server: 20.187.121.30
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: faecfd23-4636-4a3b-a851-ce1e088d9763
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快1|香港|Hong_Kong|07
+  network: ws
+  port: '80'
+  server: hk14.ningmengshui.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: faecfd23-4636-4a3b-a851-ce1e088d9763
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快1|香港|Hong_Kong|06
+  network: ws
+  port: '80'
+  server: hk12.ningmengshui.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: faecfd23-4636-4a3b-a851-ce1e088d9763
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快1|香港|Hong_Kong|05
+  network: ws
+  port: '80'
+  server: hk6.ningmengshui.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: faecfd23-4636-4a3b-a851-ce1e088d9763
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快1|香港|Hong_Kong|04
+  network: ws
+  port: '80'
+  server: hk4.ningmengshui.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: faecfd23-4636-4a3b-a851-ce1e088d9763
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快1|香港|Hong_Kong|03
+  network: ws
+  port: '80'
+  server: hk1.ningmengshui.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: faecfd23-4636-4a3b-a851-ce1e088d9763
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快2|香港|Hong_Kong|08
+  network: ws
+  port: '80'
+  server: 20.187.121.30
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 172f1bab-1f72-4de3-b857-b363422cf1a9
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快2|香港|Hong_Kong|07
+  network: ws
+  port: '80'
+  server: hk14.ningmengshui.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 172f1bab-1f72-4de3-b857-b363422cf1a9
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快2|香港|Hong_Kong|06
+  network: ws
+  port: '80'
+  server: hk12.ningmengshui.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 172f1bab-1f72-4de3-b857-b363422cf1a9
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快2|香港|Hong_Kong|05
+  network: ws
+  port: '80'
+  server: hk6.ningmengshui.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 172f1bab-1f72-4de3-b857-b363422cf1a9
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快2|香港|Hong_Kong|04
+  network: ws
+  port: '80'
+  server: hk4.ningmengshui.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 172f1bab-1f72-4de3-b857-b363422cf1a9
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 快2|香港|Hong_Kong|03
+  network: ws
+  port: '80'
+  server: hk1.ningmengshui.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 172f1bab-1f72-4de3-b857-b363422cf1a9
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 风|香港|Hong_Kong|08
+  network: ws
+  port: '80'
+  server: 20.24.67.39
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5acbe6b9-404d-3dc8-a3e0-cb60cd546895
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 风|香港|Hong_Kong|07
+  network: ws
+  port: '80'
+  server: 20.205.116.138
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5acbe6b9-404d-3dc8-a3e0-cb60cd546895
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 风|香港|Hong_Kong|06
+  network: ws
+  port: '80'
+  server: 104.208.119.109
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5acbe6b9-404d-3dc8-a3e0-cb60cd546895
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 风|日本|Tokyo|04
+  network: ws
+  port: '80'
+  server: 52.197.72.225
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5acbe6b9-404d-3dc8-a3e0-cb60cd546895
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 风|日本|Tokyo|05
+  network: ws
+  port: '80'
+  server: 13.115.142.100
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5acbe6b9-404d-3dc8-a3e0-cb60cd546895
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+  ws-path: /
+proxy-groups:
+- name: 🎈 套餐信息
+  proxies:
+  - 12-11 13:11 更新
+  - 熊|剩余流量：479.27 GB
+  - 熊|套餐到期：2023-01-09
+  - 北|剩余流量：498.15 GB
+  - 北|套餐到期：2023-01-09
+  - 檬|剩余流量：499.99 GB
+  - 檬|套餐到期：2023-01-09
+  - 快1|剩余流量：1279.41 GB
+  - 快1|套餐到期：2023-01-11
+  - 快1|只用于游戏加速，禁止用于非法用途，禁止刷流量，谢谢大家配合
+  - 快2|剩余流量：1278.33 GB
+  - 快2|套餐到期：2023-01-11
+  - 快2|只用于游戏加速，禁止用于非法用途，禁止刷流量，谢谢大家配合
+  - 风|剩余流量：386.65GB
+  - 风|过期时间：2022-12-16
+  type: select
+- name: 🔰 选择国外节点
+  proxies:
+  - 快1|香港|Hong_Kong|08
+  - 快1|香港|Hong_Kong|07
+  - 快1|香港|Hong_Kong|06
+  - 快1|香港|Hong_Kong|05
+  - 快1|香港|Hong_Kong|04
+  - 快1|香港|Hong_Kong|03
+  - 快2|香港|Hong_Kong|08
+  - 快2|香港|Hong_Kong|07
+  - 快2|香港|Hong_Kong|06
+  - 快2|香港|Hong_Kong|05
+  - 快2|香港|Hong_Kong|04
+  - 快2|香港|Hong_Kong|03
+  - 风|香港|Hong_Kong|08
+  - 风|香港|Hong_Kong|07
+  - 风|香港|Hong_Kong|06
+  - 风|日本|Tokyo|04
+  - 风|日本|Tokyo|05
+  - 美国|1Gbps
+  - 韩国|50Mbps
+  type: select
+- name: 🛡️ 选择国内节点
+  proxies:
+  - 熊|北京市|01
+  - 熊|北京市|02
+  - 北|北京市|01
+  - 北|北京市|02
+  - 檬|北京市|01
+  - 檬|北京市|02
+  - 快1|四川省|01
+  - 快1|辽宁|02
+  - 快2|四川省|01
+  - 快2|辽宁|02
+  - 风|四川省|01
+  - 风|广西壮族自治区|02
+  - 风|江苏省|03
+  type: select
+- name: 🌈 选择调试节点
+  proxies:
+  - charles
+  type: select
+- name: 🌏 国外网站
+  proxies:
+  - 🔰 选择国外节点
+  - 🌈 选择调试节点
+  - DIRECT
+  type: select
+- name: 🇨🇳 国内网站
+  proxies:
+  - 🛡️ 选择国内节点
+  - 🌈 选择调试节点
+  - DIRECT
+  type: select
+- name: ⏬ 大量下载
+  proxies:
+  - 美国|1Gbps
+  - DIRECT
+  - 熊|北京市|01
+  - 熊|北京市|02
+  - 北|北京市|01
+  - 北|北京市|02
+  - 檬|北京市|01
+  - 檬|北京市|02
+  - 快1|四川省|01
+  - 快1|辽宁|02
+  - 快2|四川省|01
+  - 快2|辽宁|02
+  - 风|四川省|01
+  - 风|广西壮族自治区|02
+  - 风|江苏省|03
+  - 快1|香港|Hong_Kong|08
+  - 快1|香港|Hong_Kong|07
+  - 快1|香港|Hong_Kong|06
+  - 快1|香港|Hong_Kong|05
+  - 快1|香港|Hong_Kong|04
+  - 快1|香港|Hong_Kong|03
+  - 快2|香港|Hong_Kong|08
+  - 快2|香港|Hong_Kong|07
+  - 快2|香港|Hong_Kong|06
+  - 快2|香港|Hong_Kong|05
+  - 快2|香港|Hong_Kong|04
+  - 快2|香港|Hong_Kong|03
+  - 风|香港|Hong_Kong|08
+  - 风|香港|Hong_Kong|07
+  - 风|香港|Hong_Kong|06
+  - 风|日本|Tokyo|04
+  - 风|日本|Tokyo|05
+  type: select
+- name: 🛑 拦截广告
+  proxies:
+  - REJECT
+  - DIRECT
+  - 🛡️ 选择国内节点
+  - 🔰 选择国外节点
+  type: select
+- name: 🐟 漏网之鱼
+  proxies:
+  - 🛡️ 选择国内节点
+  - 🔰 选择国外节点
+  - 🌈 选择调试节点
+  - 美国|1Gbps
+  - DIRECT
+  type: select
+rule-providers:
+  apple:
+    behavior: domain
+    interval: 43200
+    path: ./ruleset/apple.yaml
+    type: http
+    url: https://oss.dandaner.cn/publicshare/ClashRules/apple.txt
+  applications:
+    behavior: classical
+    interval: 43200
+    path: ./ruleset/applications.yaml
+    type: http
+    url: https://oss.dandaner.cn/publicshare/ClashRules/applications.txt
+  cncidr:
+    behavior: ipcidr
+    interval: 43200
+    path: ./ruleset/cncidr.yaml
+    type: http
+    url: https://oss.dandaner.cn/publicshare/ClashRules/cncidr.txt
+  direct:
+    behavior: domain
+    interval: 43200
+    path: ./ruleset/direct.yaml
+    type: http
+    url: https://oss.dandaner.cn/publicshare/ClashRules/direct.txt
+  gfw:
+    behavior: domain
+    interval: 43200
+    path: ./ruleset/gfw.yaml
+    type: http
+    url: https://oss.dandaner.cn/publicshare/ClashRules/gfw.txt
+  google:
+    behavior: domain
+    interval: 43200
+    path: ./ruleset/google.yaml
+    type: http
+    url: https://oss.dandaner.cn/publicshare/ClashRules/google.txt
+  greatfire:
+    behavior: domain
+    interval: 43200
+    path: ./ruleset/greatfire.yaml
+    type: http
+    url: https://oss.dandaner.cn/publicshare/ClashRules/greatfire.txt
+  icloud:
+    behavior: domain
+    interval: 43200
+    path: ./ruleset/icloud.yaml
+    type: http
+    url: https://oss.dandaner.cn/publicshare/ClashRules/icloud.txt
+  lancidr:
+    behavior: ipcidr
+    interval: 43200
+    path: ./ruleset/lancidr.yaml
+    type: http
+    url: https://oss.dandaner.cn/publicshare/ClashRules/lancidr.txt
+  private:
+    behavior: domain
+    interval: 43200
+    path: ./ruleset/private.yaml
+    type: http
+    url: https://oss.dandaner.cn/publicshare/ClashRules/private.txt
+  proxy:
+    behavior: domain
+    interval: 43200
+    path: ./ruleset/proxy.yaml
+    type: http
+    url: https://oss.dandaner.cn/publicshare/ClashRules/proxy.txt
+  reject:
+    behavior: domain
+    interval: 43200
+    path: ./ruleset/reject.yaml
+    type: http
+    url: https://oss.dandaner.cn/publicshare/ClashRules/reject.txt
+  telegramcidr:
+    behavior: ipcidr
+    interval: 43200
+    path: ./ruleset/telegramcidr.yaml
+    type: http
+    url: https://oss.dandaner.cn/publicshare/ClashRules/telegramcidr.txt
+  tld-not-cn:
+    behavior: domain
+    interval: 43200
+    path: ./ruleset/tld-not-cn.yaml
+    type: http
+    url: https://oss.dandaner.cn/publicshare/ClashRules/tld-not-cn.txt
+rules:
+- PROCESS-NAME,Ld9BoxSVC.exe,🌈 选择调试节点
+- PROCESS-NAME,Ld9BoxHeadless.exe,🌈 选择调试节点
+- PROCESS-NAME,dnplayer.exe,🌈 选择调试节点
+- DOMAIN,oss.dandaner.cn,🌏 国外网站
+- DOMAIN,imgapi.dandaner.cn,🌏 国外网站
+- DOMAIN-SUFFIX,microsofttranslator.com,🌏 国外网站
+- DOMAIN-SUFFIX,minio.io,🌏 国外网站
+- DOMAIN-SUFFIX,bwg.net,🌏 国外网站
+- DOMAIN-SUFFIX,tampermonkey.net,🌏 国外网站
+- DOMAIN-SUFFIX,speedtest.net,🌏 国外网站
+- DOMAIN-SUFFIX,cloudfront.net,🌏 国外网站
+- DOMAIN-SUFFIX,mamoe.net,🌏 国外网站
+- DOMAIN-SUFFIX,lgtcpnb.cn,🌏 国外网站
+- DOMAIN-SUFFIX,akamaized.net,⏬ 大量下载
+- DOMAIN-SUFFIX,edgesrv.com,🇨🇳 国内网站
+- DOMAIN-KEYWORD,google,🌏 国外网站
+- PROCESS-NAME,N_m3u8DL-CLI_v3.0.2.exe,⏬ 大量下载
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- DOMAIN,devtools.azureedge.net,DIRECT
+- RULE-SET,private,DIRECT
+- RULE-SET,lancidr,DIRECT
+- GEOIP,LAN,DIRECT
+- RULE-SET,applications,⏬ 大量下载
+- RULE-SET,reject,🛑 拦截广告
+- RULE-SET,icloud,🇨🇳 国内网站
+- RULE-SET,apple,🇨🇳 国内网站
+- RULE-SET,google,🌏 国外网站
+- RULE-SET,proxy,🌏 国外网站
+- RULE-SET,direct,🇨🇳 国内网站
+- RULE-SET,cncidr,🇨🇳 国内网站
+- RULE-SET,telegramcidr,🌏 国外网站
+- RULE-SET,gfw,🌏 国外网站
+- RULE-SET,greatfire,🌏 国外网站
+- RULE-SET,tld-not-cn,🌏 国外网站
+- RULE-SET,cncidr,🇨🇳 国内网站
+- GEOIP,CN,🇨🇳 国内网站
+- DOMAIN-KEYWORD,.com.cn,🇨🇳 国内网站
+- DOMAIN-KEYWORD,.xyz,🌏 国外网站
+- DOMAIN-KEYWORD,.store,🌏 国外网站
+- DOMAIN-KEYWORD,.org,🌏 国外网站
+- DOMAIN-KEYWORD,.dev,🌏 国外网站
+- DOMAIN-KEYWORD,.io,🌏 国外网站
+- DOMAIN-KEYWORD,.im,🌏 国外网站
+- DOMAIN-KEYWORD,.site,🌏 国外网站
+- DOMAIN-KEYWORD,.ru,🌏 国外网站
+- DOMAIN-KEYWORD,.me,🌏 国外网站
+- DOMAIN-KEYWORD,.info,🌏 国外网站
+- DOMAIN-KEYWORD,.top,🌏 国外网站
+- DOMAIN-KEYWORD,.xyz,🌏 国外网站
+- DOMAIN-KEYWORD,.vip,🌏 国外网站
+- DOMAIN-KEYWORD,.club,🌏 国外网站
+- DOMAIN-KEYWORD,.wang,🌏 国外网站
+- DOMAIN-KEYWORD,.shop,🌏 国外网站
+- DOMAIN-KEYWORD,.work,🌏 国外网站
+- DOMAIN-KEYWORD,.help,🌏 国外网站
+- DOMAIN-KEYWORD,.ren,🌏 国外网站
+- DOMAIN-KEYWORD,.online,🌏 国外网站
+- DOMAIN-KEYWORD,.wiki,🌏 国外网站
+- DOMAIN-KEYWORD,.cc,🌏 国外网站
+- DOMAIN-KEYWORD,.tv,🌏 国外网站
+- DOMAIN-KEYWORD,.team,🌏 国外网站
+- DOMAIN-KEYWORD,.beer,🌏 国外网站
+- DOMAIN-KEYWORD,.fans,🌏 国外网站
+- DOMAIN-KEYWORD,.ml,🌏 国外网站
+- DOMAIN-KEYWORD,.jp,🌏 国外网站
+- DOMAIN-KEYWORD,.hk,🌏 国外网站
+- DOMAIN-KEYWORD,.eu,🌏 国外网站
+- DOMAIN-KEYWORD,.co,🌏 国外网站
+- DOMAIN-KEYWORD,.io,🌏 国外网站
+- DOMAIN-KEYWORD,.tw,🌏 国外网站
+- DOMAIN-KEYWORD,.icu,🌏 国外网站
+- DOMAIN-KEYWORD,.ps,🌏 国外网站
+- DOMAIN-KEYWORD,.biz,🌏 国外网站
+- DOMAIN-KEYWORD,.lol,🌏 国外网站
+- DOMAIN-KEYWORD,.pro,🌏 国外网站
+- DOMAIN-KEYWORD,.ink,🌏 国外网站
+- DOMAIN-KEYWORD,.ci,🌏 国外网站
+- DOMAIN-KEYWORD,.net,🌏 国外网站
+- MATCH,🐟 漏网之鱼
+socks-port: 7891
