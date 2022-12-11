@@ -8,8 +8,6 @@ cd ${path}
 echo "下载规则文件到本地"
 curl -o "./rules/apple.txt" "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt"
 sleep 3
-curl -o "./rules/applications.txt" "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt"
-sleep 3
 curl -o "./rules/cncidr.txt" "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt"
 sleep 3
 curl -o "./rules/direct.txt" "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt"
