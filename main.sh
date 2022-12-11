@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "更新手动添加的规则"
+git pull
 time=$(date "+%Y%m%d-%H%M%S")
 path="${HOME}/clash_config"
 echo "" > ${path}/logs.log
