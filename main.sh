@@ -35,5 +35,5 @@ sleep 3
 curl -o "./rules/tld-not-cn.txt" "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
 
 echo "推送到到gitee"
-git commit -m "规则更新${time}"
+git commit -a -m "规则更新${time}"
 git push
